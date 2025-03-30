@@ -1,0 +1,4 @@
+*.exe
+# terraform/.terraform/ フォルダのみ除外する
+terraform/.terraform/
+terraform/terraform.*
