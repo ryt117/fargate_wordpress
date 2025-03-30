@@ -1,4 +1,4 @@
-## "fargate_wordpress_project"
+# FargateWP
 Terraformを使用してECS FargateでWordpressを構築するものです。
 
 ## 構成
