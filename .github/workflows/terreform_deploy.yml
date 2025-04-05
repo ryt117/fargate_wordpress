@@ -20,7 +20,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Setup Terraform
-      uses: hashicorp/setup-terraform@v4
+      uses: hashicorp/setup-terraform@v2
       with:
         terraform_version: 1.4.0  # 必要なTerraformのバージョンを指定
 
