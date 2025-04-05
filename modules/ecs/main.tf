@@ -10,12 +10,12 @@ resource "aws_ecs_task_definition" "wordpress" {
   cpu = "1024"
   memory = "2048"
   network_mode = "awsvpc"
-  execution_role_arn = "arn:aws:iam::061039782769:role/ecsTaskExecutionRole"
+  execution_role_arn = "arn:aws:iam::hogehoge:role/ecsTaskExecutionRole"
 
   container_definitions = jsonencode([
     {
       name = "wordpress"
-      image = "061039782769.dkr.ecr.ap-northeast-1.amazonaws.com/wordpress:latest"
+      image = "hogehoge.dkr.ecr.ap-northeast-1.amazonaws.com/wordpress:latest"
       essential = true
       portMappings = [
         {

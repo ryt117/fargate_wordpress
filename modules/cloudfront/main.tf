@@ -25,7 +25,7 @@ resource "aws_cloudfront_distribution" "test_cf" {
 
   aliases = ["ryu-test.click"]
   viewer_certificate {
-    acm_certificate_arn = "arn:aws:acm:us-east-1:061039782769:certificate/63b63c8c-7b8c-495c-93d7-ed6b5d026925" # us-east-1の証明書
+    acm_certificate_arn = "arn:aws:acm:us-east-1:hogehoge:certificate/63b63c8c-7b8c-495c-93d7-ed6b5d026925" # us-east-1の証明書
     ssl_support_method = "sni-only"
     minimum_protocol_version = "TLSv1.2_2021"
   }
