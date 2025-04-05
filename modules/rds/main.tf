@@ -7,7 +7,7 @@ resource "aws_db_instance" "db" {
   username       = "admin"
   password       = "Password123"
   backup_retention_period = "0"
-  final_snapshot_identifier = false # 最終スナップショットのスキップ
+  final_snapshot_identifier = true # 最終スナップショットのスキップ
   db_subnet_group_name    = aws_db_subnet_group.db_group.name
   vpc_security_group_ids  = [aws_security_group.db_sg.id]
 }

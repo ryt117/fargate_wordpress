@@ -1,3 +1,12 @@
+terraform {
+  backend "s3" {
+    bucket = "terraform-state-fargate-wp"
+    key    = "ecs/wordpress/terraform.tfstate"
+    region = "ap-northeast-1"
+    use_lockfile = true
+  }
+}
+
 variable "access_key" {
   description = "AWS Access Key"
   type        = string

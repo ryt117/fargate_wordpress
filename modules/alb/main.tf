@@ -25,7 +25,7 @@ resource "aws_lb_listener" "https_listener" {
   port = "443"
   protocol = "HTTPS"
   ssl_policy = "ELBSecurityPolicy-2016-08"
-  certificate_arn = "arn:aws:acm:ap-northeast-1:<アカウントID>:certificate/b7f2c39b-71e8-4bb3-8595-8a0cfe3738da" #ALBの証明書
+  certificate_arn = "arn:aws:acm:ap-northeast-1:061039782769:certificate/b7f2c39b-71e8-4bb3-8595-8a0cfe3738da" #ALBの証明書
   
   default_action {
     type = "forward"
